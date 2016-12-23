@@ -16,7 +16,7 @@
 	        ."Please go back and try again.";
 	   exit;
 	}
-
+	@ $db = new mysqli('localhost','hostname','password','books');
 	if (!get_magic_quotes_gpc()) {
 	  $isbn = addslashes($isbn);
 	  $author = addslashes($author);
